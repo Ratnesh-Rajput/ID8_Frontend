@@ -1,0 +1,8 @@
+React Splurge
+
+States are variables that store the state of UI, that means they are dynamic & used to render UI conditionally.
+
+React apps are made out of components. A component is a piece of the UI (user interface) that has its own logic and appearanc
+
+Synthetic Events (React’s wrapper around native events) React handles: Event delegation Cleanup on component unmount
+ 

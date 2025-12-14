@@ -1,0 +1,11 @@
+{
+  "name": "id8_frontend",
+  "version": "1.0.0",
+  "description": "Frontend App 4 ID8",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ratnesh-Rajput",
+  "license": "MIT"
+}
