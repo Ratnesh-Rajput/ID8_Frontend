@@ -6,3 +6,72 @@ React apps are made out of components. A component is a piece of the UI (user in
 
 Synthetic Events (React’s wrapper around native events) React handles: Event delegation Cleanup on component unmount
  
+//Earlier JS:
+
+Large JS apps became fragile because:
+
+Scripts executed immediately
+
+Everything was global
+
+Dependencies were implicit
+
+Order mattered
+
+JS wasn’t designed for large apps
+
+developers hacked “modularity” into JavaScript using patterns:
+The IIFE (Immediately Invoked Function Expression): [Encaps.]
+Function creates a new scope
+
+Immediately executed
+
+Nothing leaks to window unless you expose it
+
+    But:
+
+Dependencies were still fragile
+
+Load order still mattered
+
+Tooling couldn’t reason about code
+
+Developers wanted:
+
+Node-style imports
+
+npm packages
+
+Clean architecture
+Browsers couldn’t do that.
+
+👉 This is why bundlers were invented.
+
+        Bundler does:
+
+Starts from entry file
+
+Resolves imports
+
+Builds dependency graph
+
+Converts everything to plain JS
+
+Outputs browser-ready files
+
+
+Why modern tools changed approach
+Key insight (Vite, Snowpack):
+
+Browsers already understand ES modules.
+
+So instead of:
+
+bundle → serve
+
+
+They do:
+
+serve modules directly
+→ transform only what’s requested
+→ let browser handle imports
