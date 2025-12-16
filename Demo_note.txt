@@ -75,3 +75,31 @@ They do:
 serve modules directly
 → transform only what’s requested
 → let browser handle imports
+
+
+Event Listeners 
+-> Capture: ancestors have access,
+-> Target: both parent as well as child have access
+-> bubble: child -> parent -> ancestor
+Event Delgation:
+When a click happens:
+
+Browser triggers native event
+
+React intercepts it at the root
+
+React figures out which component fired it
+
+React manually propagates the event through the React Fiber tree
+
+What Is the Fiber Tree?
+
+The Fiber Tree is:(2 of these are maintained)
+
+A linked tree of Fiber nodes
+
+Each Fiber node corresponds to one React element
+
+Stored in memory (not the DOM)
+
+Used for reconciliation, rendering, and event handling
